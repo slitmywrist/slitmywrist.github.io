@@ -1,0 +1,73 @@
+body {
+    background-color: rgb(20, 19, 26);
+}
+
+.nm {
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 35px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-shadow: 0.1em 0.1em #636363,
+                 0em 0em 0.5em #fff,
+                 1.5em 1.5em rgba(71, 57, 148, 0.2),
+                 1.6em 1.6em rgba(71, 57, 148, 0.1),
+                 1.5em 1.5em 0.4em rgba(71, 57, 148, 0.4);
+}
+
+
+
+.discord{
+    color: #14131a;
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: absolute;
+    top: 95%;
+    left: 88%;
+    transition: 0.3s;
+}
+
+.discord:hover{
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: absolute;
+    top: 95%;
+    left: 88%;
+    text-shadow: 0em 0em 0.4em #fff;
+}
+
+.nm::after{
+    animation: animate infinite 5s;
+    content: "";
+}
+
+@keyframes animate {
+    0% {
+        content: ".";
+    }
+    14%{
+        content: ". .";
+    }
+    32% {
+        content: ". . .";
+    }
+    50%{
+        content: ". .";
+    }
+    68%{
+        content: ". . .";
+    }
+    82%{
+        content: ". .";
+    }
+    100% {
+        content: ".";
+    }
+}
